@@ -123,6 +123,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     transition: opacity 0.2s;
+    text-decoration: none
 }
 
 .btn-primary:hover { opacity: 0.85; }
