@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 1 — Menu Topo Horizontal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="app">
+        <!-- PÁGINA INICIAL -->
+        <div class="page active" id="page-home">
+            <header class="top-header">
+                <div class="logo">MERIDIAN</div>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link active" data-page="page-home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-sobre">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-projetos">Projetos</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main-grid">
+                <section class="hero-block">
+                    <span class="tag">Bem-vindo</span>
+                    <h1>Design para um mundo em movimento</h1>
+                    <p>Criamos experiências digitais que unem forma e função, com atenção meticulosa a cada detalhe tipográfico e espacial.</p>
+                    <button class="btn-primary" data-page="page-sobre">Conhecer mais</button>
+                </section>
+
+                <section class="cards-block">
+                    <article class="card">
+                        <div class="card-num">01</div>
+                        <h3>Identidade Visual</h3>
+                        <p>Desenvolvimento de marcas consistentes e memoráveis que comunicam a essência do negócio com clareza e sofisticação.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-num">02</div>
+                        <h3>Interfaces Digitais</h3>
+                        <p>Criação de interfaces intuitivas e elegantes, focadas na experiência do usuário e na conversão de objetivos.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-num">03</div>
+                        <h3>Sistemas de Design</h3>
+                        <p>Estruturação de design systems escaláveis que garantem coesão visual em todos os pontos de contato da marca.</p>
+                    </article>
+                </section>
+
+                <section class="highlight-block">
+                    <div class="highlight-text">
+                        <h2>Uma abordagem que transforma perspectivas</h2>
+                        <p>Nosso processo criativo começa com a escuta ativa e termina com soluções que superam expectativas. Cada projeto é único, cada detalhe é intencional.</p>
+                    </div>
+                    <div class="highlight-stat">
+                        <div class="stat"><span class="num">127</span><span class="label">Projetos entregues</span></div>
+                        <div class="stat"><span class="num">98%</span><span class="label">Clientes satisfeitos</span></div>
+                        <div class="stat"><span class="num">8</span><span class="label">Anos de mercado</span></div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <p>© 2026 Meridian Studio · Todos os direitos reservados</p>
+            </footer>
+        </div>
+
+        <!-- PÁGINA SOBRE -->
+        <div class="page" id="page-sobre">
+            <header class="top-header">
+                <div class="logo">MERIDIAN</div>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-page="page-home">Início</a></li>
+                        <li><a href="#" class="nav-link active" data-page="page-sobre">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-projetos">Projetos</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="inner-page">
+                <h2 class="page-title">Sobre nós</h2>
+                <p class="page-intro">Somos um estúdio de design multidisciplinar fundado em 2018. Nossa missão é criar soluções visuais que conectam marcas e pessoas de maneira autêntica e duradoura.</p>
+                <div class="text-columns">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </main>
+            <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
+        </div>
+
+        <!-- PÁGINA PROJETOS -->
+        <div class="page" id="page-projetos">
+            <header class="top-header">
+                <div class="logo">MERIDIAN</div>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-page="page-home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-sobre">Sobre</a></li>
+                        <li><a href="#" class="nav-link active" data-page="page-projetos">Projetos</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="inner-page">
+                <h2 class="page-title">Projetos</h2>
+                <p class="page-intro">Uma seleção dos nossos trabalhos mais recentes e relevantes, desenvolvidos com paixão e dedicação para clientes de diversos segmentos.</p>
+                <div class="project-grid">
+                    <div class="project-item"><div class="proj-thumb"></div><h4>Rebranding Artesanal</h4><p>Identidade visual para marca de produtos artesanais do sul do Brasil.</p></div>
+                    <div class="project-item"><div class="proj-thumb t2"></div><h4>App de Finanças</h4><p>Interface mobile para gestão financeira pessoal com foco em usabilidade.</p></div>
+                    <div class="project-item"><div class="proj-thumb t3"></div><h4>Portal Educacional</h4><p>Plataforma de ensino a distância para universidade federal.</p></div>
+                    <div class="project-item"><div class="proj-thumb t4"></div><h4>E-commerce Premium</h4><p>Loja virtual de moda com experiência de compra personalizada.</p></div>
+                </div>
+            </main>
+            <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
+        </div>
+
+        <!-- PÁGINA CONTATO -->
+        <div class="page" id="page-contato">
+            <header class="top-header">
+                <div class="logo">MERIDIAN</div>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link" data-page="page-home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-sobre">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-page="page-projetos">Projetos</a></li>
+                        <li><a href="#" class="nav-link active" data-page="page-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="inner-page">
+                <h2 class="page-title">Contato</h2>
+                <p class="page-intro">Tem um projeto em mente? Vamos conversar. Estamos sempre prontos para novos desafios criativos.</p>
+                <div class="contact-info">
+                    <div class="contact-item"><strong>Email</strong><span>ola@meridianstudio.com.br</span></div>
+                    <div class="contact-item"><strong>Telefone</strong><span>(47) 99999-0000</span></div>
+                    <div class="contact-item"><strong>Localização</strong><span>Joinville, Santa Catarina</span></div>
+                </div>
+            </main>
+            <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
+        </div>
+    </div>
+
+    <script src="nav1.js"></script>
+</body>
+</html>
