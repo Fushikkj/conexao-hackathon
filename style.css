@@ -1,0 +1,297 @@
+/* ===== RESET & VARIÁVEIS ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --bg: #f7f4ef;
+    --ink: #1a1209;
+    --accent: #c8522a;
+    --muted: #7a6e62;
+    --card-bg: #fff;
+    --border: #e2ddd6;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+/* ===== PÁGINAS ===== */
+.page { display: none; min-height: 100vh; flex-direction: column; }
+.page.active { display: flex; }
+
+/* ===== HEADER TOPO HORIZONTAL ===== */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+    background: var(--ink);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--bg);
+    letter-spacing: 0.1em;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.top-nav a {
+    color: #b5ad9f;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover, .top-nav a.active {
+    color: var(--bg);
+}
+
+.top-nav a.active {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+}
+
+/* ===== MAIN GRID ===== */
+.main-grid {
+    flex: 1;
+    display: grid;
+    grid-template-areas:
+        "hero hero"
+        "cards cards"
+        "highlight highlight";
+    gap: 0;
+    padding: 0;
+}
+
+.hero-block {
+    grid-area: hero;
+    padding: 5rem 3rem;
+    background: var(--bg);
+    max-width: 700px;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-block h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+}
+
+.hero-block p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.85; }
+
+.cards-block {
+    grid-area: cards;
+    display: flex;
+    gap: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.card {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    border-right: 1px solid var(--border);
+    background: var(--card-bg);
+}
+
+.card:last-child { border-right: none; }
+
+.card-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--border);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card p { color: var(--muted); font-size: 0.9rem; }
+
+.highlight-block {
+    grid-area: highlight;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem 3rem;
+    background: var(--ink);
+}
+
+.highlight-text { flex: 1; }
+
+.highlight-text h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--bg);
+    margin-bottom: 1rem;
+}
+
+.highlight-text p { color: #b5ad9f; font-size: 0.95rem; }
+
+.highlight-stat {
+    display: flex;
+    gap: 3rem;
+    flex-shrink: 0;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat .num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.stat .label {
+    font-size: 0.75rem;
+    color: #b5ad9f;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* ===== PÁGINAS INTERNAS ===== */
+.inner-page {
+    flex: 1;
+    padding: 4rem 3rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-intro {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.text-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.text-columns p { color: var(--muted); line-height: 1.8; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project-item { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.proj-thumb {
+    height: 180px;
+    background: linear-gradient(135deg, #c8522a 0%, #e8864a 100%);
+    margin-bottom: 0.5rem;
+}
+
+.proj-thumb.t2 { background: linear-gradient(135deg, #2a5cc8 0%, #4a86e8 100%); }
+.proj-thumb.t3 { background: linear-gradient(135deg, #2ac87a 0%, #4ae8b4 100%); }
+.proj-thumb.t4 { background: linear-gradient(135deg, #8c2ac8 0%, #b44ae8 100%); }
+
+.project-item h4 { font-family: 'DM Serif Display', serif; font-size: 1.1rem; }
+.project-item p { color: var(--muted); font-size: 0.875rem; }
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-item strong { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.contact-item span { font-size: 1.1rem; }
+
+/* ===== FOOTER ===== */
+.main-footer {
+    padding: 1.5rem 3rem;
+    background: var(--ink);
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7a6e62;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+    .top-header { padding: 1rem 1.5rem; }
+    .top-nav ul { gap: 1rem; }
+    .main-grid { grid-template-areas: "hero" "cards" "highlight"; }
+    .cards-block { flex-direction: column; }
+    .card { border-right: none; border-bottom: 1px solid var(--border); padding: 2rem 1.5rem; }
+    .highlight-block { flex-direction: column; padding: 3rem 1.5rem; }
+    .hero-block { padding: 3rem 1.5rem; }
+    .text-columns, .project-grid { grid-template-columns: 1fr; }
+    .inner-page { padding: 2.5rem 1.5rem; }
+}
