@@ -12,16 +12,14 @@
 
 
 
-
-
     <div id="app">
         <!-- PÁGINA INICIAL -->
         <div class="page active" id="page-home">
             <header class="top-header">
-                <div class="logo">CONECTA</div>
+                <div class="logo" link href="page-home">CONECTA</div>
                 <nav class="top-nav">
                     <ul>
-                        <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
+                        <li><a href="#home" class="nav-link active" data-page="page-home">Home</a></li>
                         <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
                         <li><a href="#marcar" class="nav-link" data-page="page-marcar">Marcar Presença</a></li>
                         <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
@@ -31,16 +29,17 @@
             <banner>
 
     <div class="banner">
-      <h1>Bem vindo ao Conecta</h1>
+      <h1>Bemvindo ao Conecta</h1>
       <h2>Conectando Comunidades</h2>
       <button class="btn-primary" data-page="page-eventos">Veja nossos Eventos</button>
+
+
     </div>
   
             </banner>
 
             <main class="main-grid">
                 <section class="hero-block">
-                    <span class="tag01">Veja quais eventos estão rolando na sua praça!</span>
                     <h1>Conectando comunidades</h1>
                     <p>Te ajudamos a conhecer melhor seu bairro.</p>
                     
@@ -60,23 +59,26 @@
                         <div class="card-num">Yoga para Iniciantes</div>
                         <h3>Toda segunda às 15h</h3>
                         <p>"A yoga vai além da meditição, é uma filosofia que une o ser humano com sua mais pura essência" - Professor Oscar.</p>
+                        <a href="#marcar" class="btn-primary">Marcar Presença</a>
                     </article>
                     <article class="card">
-                        <div class="card-num">Batalha de rima</div>
-                        <h3>Toda sabádo às 18h</h3>
-                        <p>"O improviso ajuda MCs expressar suas realidades e criatividade através da música." - MC Édio</p>
+                        <div class="card-num">Aula de Capoeira</div>
+                        <h3>Toda quinta às 18h</h3>
+                        <p>"Mais que luta, é dança, música e história." - Professor Édio</p>
+                        <a href="#marcar" class="btn-primary">Marcar Presença</a>
                     </article>
                 </section>
 
+                
                 <section class="highlight-block">
                     <div class="highlight-text">
                         <h2>Sobre nosso projeto</h2>
                         <p>Nosso processo criativo começa com o aumento do vicio em celular na vida de jovens e a sedentarismo.
                             Entre em contato para qualquer dúvida 
                     <div class="highlight-stat" >
-                        <div class="stat"><span class="num">98%</span><span class="label">conecta.projeto@gmail.com</span></div>
-                        <div class="stat"><span class="num">98%</span><span class="label">(48) 99999-0000</span></div>
-                        <div class="stat"><span class="num">8</span><span class="label">Florianópolois, Santa Catarina</span></div>
+                        <div class="stat"><span class="num">Email</span><span class="label">conecta.projeto@gmail.com</span></div>
+                        <div class="stat"><span class="num">Contato</span><span class="label">(48) 99999-9999</span></div>
+                        <div class="stat"><span class="num">Apoio via</span><span class="label">(48) 00000-0000</span></div>
                     </div>
                 </section>
             </main>
@@ -92,10 +94,52 @@
 
 
 
-        <!-- PÁGINA SOBRE -->
-        <div class="page" id="page-sobre">
+
+
+
+
+
+        <!-- PÁGINA EVENTOS -->
+        <div class="page" id="page-eventos">
             <header class="top-header">
-                <div class="logo">Conecta</div>
+                <div class="logo">CONECTA</div>
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
+                        <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
+                        <li><a href="#marcar" class="nav-link" data-page="page-marcar">Marcar Presença</a></li>
+                        <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="inner-page">
+                <h2 class="page-title">EVENTOS QUE ESTÃO ROLANDO PERTO DE VOCÊ!</h2>
+                <p class="page-intro">para clientes de diversos segmentos.</p>
+                <div class="project-grid">
+                    <div class="project-item"><div class="proj-thumb"></div><h4>Rebranding Artesanal</h4><p>Identidade visual para marca de produtos artesanais do sul do Brasil.</p></div>
+                    <div class="project-item"><div class="proj-thumb t2"></div><h4>App de Finanças</h4><p>Interface mobile para gestão financeira pessoal com foco em usabilidade.</p></div>
+                    <div class="project-item"><div class="proj-thumb t3"></div><h4>Portal Educacional</h4><p>Plataforma de ensino a distância para universidade federal.</p></div>
+                    <div class="project-item"><div class="proj-thumb t4"></div><h4>E-commerce Premium</h4><p>Loja virtual de moda com experiência de compra personalizada.</p></div>
+                </div>
+            </main>
+            <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- PÁGINA MARCAR PRESENÇA -->
+        <div class="page" id="page-marcar">
+            <header class="top-header">
+                <div class="logo">CONECTA</div>
                 <nav class="top-nav">
                     <ul>
                         <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
@@ -121,10 +165,17 @@
 
 
 
-        <!-- PÁGINA PROJETOS -->
-        <div class="page" id="page-projetos">
+
+
+
+
+
+
+
+        <!-- PÁGINA PLANOS -->
+        <div class="page" id="page-planos">
             <header class="top-header">
-                <div class="logo">MERIDIAN</div>
+                <div class="logo">CONECTA</div>
                 <nav class="top-nav">
                     <ul>
                         <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
@@ -135,42 +186,7 @@
                 </nav>
             </header>
             <main class="inner-page">
-                <h2 class="page-title">Projetos</h2>
-                <p class="page-intro">Uma seleção dos nossos trabalhos mais recentes e relevantes, desenvolvidos com paixão e dedicação para clientes de diversos segmentos.</p>
-                <div class="project-grid">
-                    <div class="project-item"><div class="proj-thumb"></div><h4>Rebranding Artesanal</h4><p>Identidade visual para marca de produtos artesanais do sul do Brasil.</p></div>
-                    <div class="project-item"><div class="proj-thumb t2"></div><h4>App de Finanças</h4><p>Interface mobile para gestão financeira pessoal com foco em usabilidade.</p></div>
-                    <div class="project-item"><div class="proj-thumb t3"></div><h4>Portal Educacional</h4><p>Plataforma de ensino a distância para universidade federal.</p></div>
-                    <div class="project-item"><div class="proj-thumb t4"></div><h4>E-commerce Premium</h4><p>Loja virtual de moda com experiência de compra personalizada.</p></div>
-                </div>
-            </main>
-            <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <!-- PÁGINA CONTATO -->
-        <div class="page" id="page-contato">
-            <header class="top-header">
-                <div class="logo">MERIDIAN</div>
-                <nav class="top-nav">
-                    <ul>
-                        <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
-                        <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
-                        <li><a href="#marcar" class="nav-link" data-page="page-marcar">Marcar Presença</a></li>
-                        <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="inner-page">
-                <h2 class="page-title">Contato</h2>
+                <h2 class="page-title">PLANOS</h2>
                 <p class="page-intro">Tem um projeto em mente? Vamos conversar. Estamos sempre prontos para novos desafios criativos.</p>
                 <div class="contact-info">
                     <div class="contact-item"><strong>Email</strong><span>ola@meridianstudio.com.br</span></div>
