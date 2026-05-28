@@ -3,9 +3,9 @@
 
 :root {
     --bg: #f7f4ef;
-    --ink: #737C3F;
-    --accent: #737C3F;
-    --muted: #7a6e62;
+    --ink: #56a6d8;  ;
+    --accent: #56a6d8;
+    --muted: #2e95b7;
     --card-bg: #fff;
     --border: #e2ddd6;
     font-size: 16px;
@@ -19,15 +19,16 @@ body {
 }
 
 .banner {
-    background-image: url('COMUNIDADE01.jpg');
+
+    background-image: url('COMUNIDADE07.jpg');
     background-size:90%;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #737C3F;
+    color: #ffffff;
     text-align: center;
   }
 
@@ -73,7 +74,7 @@ body {
 }
 
 .top-nav a {
-    color: #b5ad9f;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
@@ -116,22 +117,22 @@ body {
     font-size: large;
     font-weight: 1000;
     letter-spacing: 0.15em;
-    color:#737C3F;
+    color:#59ccdb;
 }
 
 .tag01{
 
     
     display: inline-block;
-    background: #f8ffcd;
+    background: #2bc2dd;
     padding: 5px 10px;
-    border-left: 4px solid #737C3F;
+    border-left: 4px solid #a3e6ef;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
     font-weight: 1000;
     letter-spacing: 0.15em;
-    color: #737C3F;
+    color: #a3e6ef;
 
 }
 
@@ -140,7 +141,7 @@ body {
     font-size: clamp(2rem, 4vw, 3.5rem);
     line-height: 1.15;
     margin-bottom: 1.5rem;
-    color:#737C3F;
+    color: #59ccdb;
     
 }
 
@@ -188,7 +189,7 @@ body {
 .card-num {
     font-family: 'DM Serif Display', serif;
     font-size: 2rem;
-    color: #737C3F;
+    color: #a3e6ef;
     margin-bottom: 1rem;
 }
 
@@ -218,7 +219,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.highlight-text p { color: #b5ad9f; font-size: 0.95rem; }
+.highlight-text p { color: #ffffff; font-size: 0.95rem; }
 
 .highlight-stat {
     display: flex;
@@ -235,13 +236,13 @@ body {
 .stat .num {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
-    color: var(--accent);
+    color: #ffffff;
     line-height: 1;
 }
 
 .stat .label {
     font-size: 0.75rem;
-    color: #b5ad9f;
+    color:#ffff;
     margin-top: 0.5rem;
     text-align: center;
 }
@@ -321,7 +322,7 @@ body {
     background: var(--ink);
     text-align: center;
     font-size: 0.8rem;
-    color: #7a6e62;
+    color: #ffffff;
 }
 
 /* ===== RESPONSIVO ===== */
