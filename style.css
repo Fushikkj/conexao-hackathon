@@ -20,7 +20,7 @@ body {
 
 .banner {
     background-image: url('COMUNIDADE01.jpg');
-    background-size:contain;
+    background-size:90%;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -31,12 +31,15 @@ body {
     text-align: center;
   }
 
-  .banner h1 {
+  .banner h1{
+    
     font-size: 60px;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   .banner p {
+    font-size:Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
   }
 
@@ -109,15 +112,27 @@ body {
 
 .tag {
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-    text-transform: uppercase;
+    font-weight: 1000;
     letter-spacing: 0.15em;
-    color:rgb(43, 183, 226);
-    border: 5px solid rgb(43, 183, 226);
-    padding: 0.25rem 0.75rem;
-    margin-bottom: 1.5rem;
+    color:#737C3F;
+}
+
+.tag01{
+
+    
+    display: inline-block;
+    background: #f8ffcd;
+    padding: 5px 10px;
+    border-left: 4px solid #737C3F;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-weight: 1000;
+    letter-spacing: 0.15em;
+    color: #737C3F;
+
 }
 
 .hero-block h1 {
@@ -125,7 +140,8 @@ body {
     font-size: clamp(2rem, 4vw, 3.5rem);
     line-height: 1.15;
     margin-bottom: 1.5rem;
-    color: var(--ink);
+    color:#737C3F;
+    
 }
 
 .hero-block p {
@@ -309,6 +325,7 @@ body {
 }
 
 /* ===== RESPONSIVO ===== */
+
 @media (max-width: 768px) {
     .top-header { padding: 1rem 1.5rem; }
     .top-nav ul { gap: 1rem; }
