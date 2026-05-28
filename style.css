@@ -1,4 +1,4 @@
-/* ===== RESET & VARIÁVEIS ===== */
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -17,6 +17,28 @@ body {
     color: var(--ink);
     line-height: 1.6;
 }
+
+.banner {
+    background-image: url('COMUNIDADE01.jpg');
+    background-size:contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #737C3F;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .banner p {
+    font-size: 24px;
+  }
 
 /* ===== PÁGINAS ===== */
 .page { display: none; min-height: 100vh; flex-direction: column; }
@@ -86,12 +108,14 @@ body {
 }
 
 .tag {
-    display: inline-block;
-    font-size: 0.75rem;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    font-size: large;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--accent);
-    border: 1px solid var(--accent);
+    color:rgb(43, 183, 226);
+    border: 5px solid rgb(43, 183, 226);
     padding: 0.25rem 0.75rem;
     margin-bottom: 1.5rem;
 }
@@ -148,7 +172,7 @@ body {
 .card-num {
     font-family: 'DM Serif Display', serif;
     font-size: 2rem;
-    color: var(--border);
+    color: #737C3F;
     margin-bottom: 1rem;
 }
 
