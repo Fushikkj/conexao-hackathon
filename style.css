@@ -3,9 +3,9 @@
 
 :root {
     --bg: #f7f4ef;
-    --ink: #9F4B1E;
-    --accent: #ebdcb8;
-    --muted: #91522B;
+    --ink: #869269;
+    --accent: #F2E6C9;
+    --muted: #7D8961;
     --card-bg: #fff;
     --border: #F2E6C9;
     font-size: 16px;
@@ -30,7 +30,7 @@
 
 .logo01{
 
-    background-image: url('Imagens/CONECTAM02.jpeg');
+    background-image: url('Imagens/CONECTAV02.jpeg');
     background-size: 100px 80px;
     background-repeat:no-repeat;
     position:relative;
@@ -51,8 +51,8 @@ body {
 
 .banner {
 
-    background-color:#9F4B1E;
-    background-image: url('Imagens/CONECTAM01.jpeg');
+    background-color: #869269;
+    background-image: url('Imagens/CONECTAV01.jpeg');
     background-size:60cqmax;
     max-width: 100%;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
     top: 55%;  
     align-self:center;
     background: var(--accent);
-    color: #fff;
+    color: #ffff;
     border: none;
     padding: 0.85rem 2rem;
     font-family:"Asimovian", sans-serif;
@@ -92,7 +92,7 @@ body {
     top: 2cqmax;  
     align-self:center;
     align-items:center;
-    background: var(--accent);
+    background: #7D8961;
     color: #fff;
     border: none;
     padding: 0.85rem 2rem;
@@ -108,7 +108,7 @@ body {
     position: static;
     top: 100%;  
     align-self:center;
-    background: var(--accent);
+    background: #869269;
     color: #fff;
     border: none;
     padding: 0.85rem 2rem;
@@ -204,15 +204,12 @@ body {
 
     
     display: inline-block;
-    background: #d8c695;
     padding: 5px 10px;
-    border-left: 4px solid #9c5824;
-
     font-family: verdana, geneva, tahoma, sans-serif;
     font-size: large;
     font-weight: 1000;
     letter-spacing: 0.15em;
-    color: #9c5824;
+    
 
 }
 
@@ -221,12 +218,12 @@ body {
     font-size: clamp(2rem, 4vw, 3.5rem);
     line-height: 1.15;
     margin-bottom: 1.5rem;
-    color: #9c5824;
+    color: #7D8961;
     
 }
 
 .hero-block p {
-    color: var(--muted);
+    color: #869269;
     font-size: 1.1rem;
     margin-bottom: 2rem;
     max-width: 500px;
@@ -262,7 +259,7 @@ body {
 
     font-family: "Baumans", system-ui;
     font-size: 2rem;
-    color: #9F4B1E;
+    color: #7D8961;
     margin-bottom: 1rem;
 }
 .card p{
@@ -356,6 +353,7 @@ body {
 }
 
 .page-intro {
+
     font-size: 1.15rem;
     color: var(--muted);
     margin-bottom: 2.5rem;
