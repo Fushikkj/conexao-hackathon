@@ -274,13 +274,13 @@ body {
     margin-bottom: 0.75rem;
 }
 
-.card p { color; font-size: 0.9rem; }
+.card p {  font-size: 0.9rem; }
 
 .highlight-block {
 
     font-family: "Baumans", system-ui;
     top:auto;
-    grid-area: highlight;
+    grid-area: highlight ;
     display: flex;
     gap: 89rem;
     align-items: center;
@@ -385,9 +385,16 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.proj-thumb.t2 { background: linear-gradient(135deg, #2a5cc8 0%, #4a86e8 100%); }
-.proj-thumb.t3 { background: linear-gradient(135deg, #2ac87a 0%, #4ae8b4 100%); }
-.proj-thumb.t4 { background: linear-gradient(135deg, #8c2ac8 0%, #b44ae8 100%); }
+.proj-thumb.t2 { background-image: url(Imagens/BATALHADERIMA.jpg); 
+    background-size: cover;}
+
+.proj-thumb.t3 { background-image: url(Imagens/YOGAAULA02.jpg); 
+    background-size: cover;
+    
+
+}
+.proj-thumb.t4 { background-image: url(Imagens/SAKTE04.jpg); 
+    background-size: cover;}
 
 .project-item h4 { font-family: "Baumans", system-ui; }
 .project-item p { color: var(--muted); font-size: 0.875rem; }
