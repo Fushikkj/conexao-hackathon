@@ -141,7 +141,7 @@ body {
 .top-nav ul {
     
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -178,16 +178,13 @@ body {
     display: grid;
     grid-template-areas:
         "hero hero"
-        "cards highlight";
+        "cards cards"
+        "highlight highlight";
     gap: 0;
     padding: 0;
 }
 
 .hero-block {
-
-    align-items: center;
-    text-align: left;
-    display: flex;
     grid-area: hero;
     padding: 5rem 3rem;
     background: var(--bg);
@@ -237,7 +234,8 @@ body {
 
 .cards-block {
 
-    grid-area: cards ;
+
+    grid-area: cards;
     display: flex;
     gap: 0;
     border-top: 1px solid var(--border);
@@ -246,7 +244,6 @@ body {
 
 .card {
 
-    border-right: 1px solid var(--border);
     position: relative;
     top:0px;
     height: 350px;
@@ -277,17 +274,16 @@ body {
     margin-bottom: 0.75rem;
 }
 
-.card p {font-size: 0.9rem; }
+.card p { color; font-size: 0.9rem; }
 
 .highlight-block {
 
     font-family: "Baumans", system-ui;
     top:auto;
-    grid-area:auto;
+    grid-area: highlight;
     display: flex;
     gap: 89rem;
     align-items: center;
-    flex-direction: row;
     padding: 4rem 3rem;
     background: var(--ink);
 }
@@ -369,16 +365,16 @@ body {
 
 .text-columns {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .text-columns p { color: var(--muted); line-height: 1.8; }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .project-item { display: flex; flex-direction: column; gap: 0.5rem; }
@@ -424,91 +420,15 @@ body {
 
 /* ===== RESPONSIVO ===== */
 
-@media (max-width: 1024px) {
-
-    .main-grid {
-        grid-template-areas:
-            "hero"
-            "cards"
-            "highlight";
-    }
-
-    .cards-block {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .card {
-        flex: 1 1 calc(50% - 15px);
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .highlight-block {
-        flex-direction: column;
-    }
-
-    .hero-block {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .text-columns,
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (max-width: 768px) {
-
-    .top-header {
-        flex-direction: column;
-    }
-
-    .top-nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .cards-block {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .text-columns,
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-block {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .inner-page {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 568px) {
-
-    .hero-block h1 {
-        font-size: 1.8rem;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    .top-nav ul {
-        gap: 8px;
-    }
+    /*Tablets : maior que 768px Mobile: menor que 768px Desktop: maior que 1024px*/
+    .top-header { flex }
+    .top-nav ul { flex"}
+    .main-grid { grid-template-areas: "hero" "cards" "highlight"; }
+    .cards-block { flex-direction: column; display:flex; }
+    .card { border-right: none; border-bottom: 1px solid var(--border); display:flex; }
+    .highlight-block { flex-direction: column; display:flex; }
+    .hero-block { display:flex; flex-direction:column; align-items:center; text-align:center; }
+    .text-columns, .project-grid { grid-template-columns: 1fr; display:flex; flex-direction:column; }
+    .inner-page { display: flex; }
 }
