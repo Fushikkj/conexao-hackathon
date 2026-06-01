@@ -126,16 +126,16 @@ body {
 .page.active { display: flex; }
 
 /* ===== HEADER TOPO HORIZONTAL ===== */
-
 .top-header {
+
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
     justify-content: space-between;
     padding: 1.25rem 3rem;
     background: var(--ink);
-    position: relative;
-   
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .top-nav ul {
@@ -149,18 +149,16 @@ body {
 
     font-family: "Baumans", system-ui;
     display: flex;
-    flex-wrap: wrap ;
-    justify-content:center;
     align-items:center;
     position:relative;
-    left:720px;
+    left:800px;
     height: 100%;
     width: 100%;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.5em;
     text-transform: uppercase;
     transition: color 0.2s;
 }
@@ -179,9 +177,9 @@ body {
     flex: 1;
     display: grid;
     grid-template-areas:
-        "hero "
-        "cards "
-        "highlight";
+        "hero hero"
+        "cards cards"
+        "highlight highlight";
     gap: 0;
     padding: 0;
 }
@@ -422,98 +420,15 @@ body {
 
 /* ===== RESPONSIVO ===== */
 
-@media (min-width: 569px) and (max-width: 1024px) {
-
-    .cards-block,
-    .highlight-block {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .card {
-        flex: 1 1 calc(50% - 15px);
-        border-right: none;
-    }
-
-    .hero-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .text-columns,
-    .project-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .inner-page {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-/* =========================
-   MOBILE (até 568px)
-========================= */
-@media (max-width: 568px) {
-
-    .top-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .top-nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .main-grid {
-        grid-template-areas:
-            "hero"
-            "cards"
-            "highlight";
-    }
-
-    .cards-block,
-    .highlight-block {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .hero-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .text-columns,
-    .project-grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .inner-page {
-        display: flex;
-        flex-direction: column;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+@media (max-width: 768px) {
+    /*Tablets : maior que 768px Mobile: menor que 768px Desktop: maior que 1024px*/
+    .top-header { flex }
+    .top-nav ul { flex"}
+    .main-grid { grid-template-areas: "hero" "cards" "highlight"; }
+    .cards-block { flex-direction: column; display:flex; }
+    .card { border-right: none; border-bottom: 1px solid var(--border); display:flex; }
+    .highlight-block { flex-direction: column; display:flex; }
+    .hero-block { display:flex; flex-direction:column; align-items:center; text-align:center; }
+    .text-columns, .project-grid { grid-template-columns: 1fr; display:flex; flex-direction:column; }
+    .inner-page { display: flex; }
 }
