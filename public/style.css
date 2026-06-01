@@ -381,19 +381,19 @@ body {
 
 .proj-thumb {
     height: 180px;
-    background: linear-gradient(135deg, #c8522a 0%, #e8864a 100%);
+    background-image: url(Imagens/ROPA.jpg);
     margin-bottom: 0.5rem;
 }
 
-.proj-thumb.t2 { background-image: url(Imagens/BATALHADERIMA.jpg); 
+.proj-thumb.t2 { background-image: url(Imagens/FEIRA.jpg); 
     background-size: cover;}
 
-.proj-thumb.t3 { background-image: url(Imagens/YOGAAULA02.jpg); 
+.proj-thumb.t3 { background-image: url(Imagens/TROCAFIGURINHA.jpg); 
     background-size: cover;
     
 
 }
-.proj-thumb.t4 { background-image: url(Imagens/SAKTE04.jpg); 
+.proj-thumb.t4 { background-image: url(Imagens/PINTURAARLIVRE.jpg); 
     background-size: cover;}
 
 .project-item h4 { font-family: "Baumans", system-ui; }
