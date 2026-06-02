@@ -187,40 +187,6 @@ body {
     text-transform: uppercase;
     transition: color 0.2s;
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    transition: 0.3s;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.botao-favorito {
-  background-color: #f0f0f0;
-  border: 2px solid #ccc;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.botao-favorito.ativo {
-  background-color: #ffcc00;
-  border-color: #e6b800;
-  color: #000;
-} 
 
 .top-nav a:hover, .top-nav a.active {
     color: var(--bg);
