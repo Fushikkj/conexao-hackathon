@@ -121,6 +121,31 @@ body {
 
 }
 
+.texto-extra {
+    display: none;
+}
+
+.btn-ver-mais {
+    position: relative;
+    margin-top: 15px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-family: "Baumans", system-ui;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-ver-mais:hover {
+    opacity: 0.85;
+}
+
+
+
 /* ===== PÁGINAS ===== */
 .page { display: none; min-height: 100vh; flex-direction: column; }
 .page.active { display: flex; }

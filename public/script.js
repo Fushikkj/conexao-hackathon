@@ -14,3 +14,26 @@
             }
         });
     });
+
+
+
+  //BOTÃO "ver mais" SOBRE PROJETO
+
+
+function toggleTexto() {
+    const texto = document.getElementById("textoExtra");
+    const botao = document.getElementById("btnVerMais");
+
+    if (texto.style.display === "inline") {
+        texto.style.display = "none";
+        botao.innerHTML = "Ver mais";
+    } else {
+        texto.style.display = "inline";
+        botao.innerHTML = "Ver menos";
+    }
+}
+
+
+
+
+
