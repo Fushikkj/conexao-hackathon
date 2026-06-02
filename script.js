@@ -214,5 +214,34 @@ document.getElementById("form-login").addEventListener("submit", function(e) {
         alert("E-mail ou senha incorretos.");
     }
 });
+//Favoritar
 
+btnFavorito = document.getElementById('btnFavorito');
+if (localStorage.getItem('paginaFavorita') === 'true') {
+  btnFavorito.classList.add('ativo');
+}
+
+btnFavorito.addEventListener('click', function() {
+  this.classList.toggle('ativo');
+
+  // Salva o estado no Local Storage
+  if (this.classList.contains('ativo')) {
+    localStorage.setItem('paginaFavorita', 'true');
+  } else {
+    localStorage.setItem('paginaFavorita', 'false');
+  }
+});
+
+
+const btn = document.getElementById("temaBtn");
+
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        btn.textContent = "Modo Claro";
+    } else {
+        btn.textContent = "Modo Escuro";
+    }
+});
 
