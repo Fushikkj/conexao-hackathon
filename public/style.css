@@ -57,10 +57,7 @@
     border:none;
     cursor: pointer;
 }
-=======
 
-
->>>>>>> Stashed changes
 body {
 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -932,7 +929,7 @@ border-radius:10px;
   .checkout-pay{
     width:100%; padding:14px; margin-top:8px; border:none; border-radius:12px;
     background:#1a1a1a; color:#fff; font-weight:600; font-size:1rem;
-    cursor:pointer; transition:background .2s, transform .2s;
+    cursor:pointer; transition: .2s, transform .2s;
   }
   .checkout-pay:hover{ background:#2f6b3a; transform:translateY(-1px); }
   
@@ -980,8 +977,8 @@ border-radius:10px;
 @media (max-width: 768px) {
     /*Tablets : maior que 768px Mobile: menor que 768px Desktop: maior que 1024px*/
     .top-header { flex }
-    .top-nav ul { flex"}
-    .main-grid { grid-template-areas: "hero" "cards" "highlight"; }
+    .top-nav ul { flex}
+    .main-grid { grid-template-areas:  "cards" "highlight"; }
     .cards-block { flex-direction: column; display:flex; }
     .card { border-right: none; border-bottom: 1px solid var(--border); display:flex; }
     .highlight-block { flex-direction: column; display:flex; }
