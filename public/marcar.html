@@ -128,10 +128,10 @@
                     <h2 class="page-title">EVENTOS QUE ESTÃO ROLANDO PERTO DE VOCÊ!</h2>
                     <p class="page-intro">para clientes de diversos segmentos.</p>
                     <div class="project-grid">
-                        <div class="project-item"><div class="proj-thumb"></div><h4>Brycachó</h4><p>Brechó beneficiente hoje ás 13h.</p><button class="btn-primary" data-page="page-login">Marcar Presença</button></div>
-                        <div class="project-item"><div class="proj-thumb t2"></div><h4>Sebo público</h4><p>Sebo de vinis famosos e vintagens - 13/06 ás 14h.</p><button class="btn-primary" data-page="page-login">Marcar Presença</button></div>
-                        <div class="project-item"><div class="proj-thumb t3"></div><h4>Trocas de Figurinhas</h4><p>Troca e venda de figurinhas da copa de 26 - amanhã as 16h .</p><button class="btn-primary" data-page="page-login">Marcar Presença</button></div>
-                        <div class="project-item"><div class="proj-thumb t4"></div><h4>Mural de Pintura</h4><p>Mural de pintura para crianças e adolescentes - quinta as 9h.</p><button class="btn-primary" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb"></div><h4>Brycachó</h4><p>Brechó beneficiente hoje ás 13h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t2"></div><h4>Sebo público</h4><p>Sebo de vinis famosos e vintagens - 13/06 ás 14h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t3"></div><h4>Trocas de Figurinhas</h4><p>Troca e venda de figurinhas da copa de 26 - amanhã as 16h .</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t4"></div><h4>Mural de Pintura</h4><p>Mural de pintura para crianças e adolescentes - quinta as 9h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
                     </div>
                 </main>
                 <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
@@ -285,6 +285,8 @@
 
 
 
+
+
             <!-- PÁGINA PLANOS -->
             <div class="page" id="page-planos">
                 <header class="top-header">
@@ -355,6 +357,57 @@
 
     <footer class="main-footer"><p>© 2026 Grupo Conexão · Todos os direitos reservados</p></footer>
 </div>
+
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-card">
+      <button class="checkout-close" id="checkoutClose" aria-label="Fechar">×</button>
+      <h3>Finalizar assinatura</h3>
+      <p class="checkout-sub">Preencha seus dados para concluir.</p>
+  
+      <form id="checkoutForm" class="checkout-form">
+        <label>Nome completo
+          <input type="text" name="nome" required />
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>Cartão
+          <input type="text" name="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required />
+        </label>
+        <div class="row-2">
+          <label>Validade
+            <input type="text" name="validade" placeholder="MM/AA" maxlength="5" required />
+          </label>
+          <label>CVV
+            <input type="text" name="cvv" placeholder="123" maxlength="4" required />
+          </label>
+        </div>
+        <button type="submit" class="checkout-pay">Pagar <span id="payTotal"></span></button>
+      </form>
+  
+      <div class="checkout-success" id="checkoutSuccess" hidden>
+        <div class="check-icon">✓</div>
+        <h4>Pagamento aprovado!</h4>
+        <p>Bem-vindo(a) à Conexão Hackathon.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <button class="plano-btn" data-plano="Participante" data-preco="0">Começar grátis</button>
+<button class="plano-btn" data-plano="Apoiador" data-preco="29">Assinar Apoiador</button>
+<button class="plano-btn" data-plano="Comunidade" data-preco="99">Assinar Comunidade</button>
+
+
+<button class="cart-fab" id="cartFab">
+    🛒 Carrinho <span class="badge" id="cartBadge">0</span>
+  </button>
+
+  
+
+
+
         <script src="./script.js"></script>
     </body>
     </html>

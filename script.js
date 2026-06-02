@@ -158,61 +158,60 @@ function validar(form){
   return ok;
 }
 
-// Cadastro
-document.getElementById("form-cadastro").addEventListener("submit", function(e) {
-    e.preventDefault();
+/// Alterna entre Login e Cadastro
+const tabs = document.querySelectorAll('.auth-tab');
+const forms = {
+  login: document.getElementById('form-login'),
+  cadastro: document.getElementById('form-cadastro'),
+};
 
-    const nome = this.nome.value;
-    const email = this.email.value;
-    const senha = this.senha.value;
-    const senha2 = this.senha2.value;
-
-    if (senha !== senha2) {
-        alert("As senhas não coincidem!");
-        return;
-    }
-
-    const usuario = {
-        nome,
-        email,
-        senha
-    };
-
-    localStorage.setItem("usuarioConecta", JSON.stringify(usuario));
-
-    alert("Cadastro realizado com sucesso!");
-
-    document.querySelector('[data-tab="login"]').click();
+function switchTab(name){
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+  Object.entries(forms).forEach(([k, f]) => f.classList.toggle('active', k === name));
+}
+tabs.forEach(t => t.addEventListener('click', () => switchTab(t.dataset.tab)));
+document.querySelectorAll('[data-switch]').forEach(a => {
+  a.addEventListener('click', e => { e.preventDefault(); switchTab(a.dataset.switch); });
 });
 
-// Login
-document.getElementById("form-login").addEventListener("submit", function(e) {
-    e.preventDefault();
+// Validação simples + feedback
+function validar(form){
+  let ok = true;
+  form.querySelectorAll('input[required]').forEach(input => {
+    const valido = input.checkValidity();
+    input.classList.toggle('invalid', !valido);
+    if (!valido) ok = false;
+  });
+  return ok;
+}
 
-    const email = this.email.value;
-    const senha = this.senha.value;
-
-    const usuario = JSON.parse(
-        localStorage.getItem("usuarioConecta")
-    );
-
-    if (!usuario) {
-        alert("Nenhum usuário cadastrado.");
-        return;
-    }
-
-    if (
-        usuario.email === email &&
-        usuario.senha === senha
-    ) {
-        localStorage.setItem("logado", "true");
-
-        alert(`Bem-vindo, ${usuario.nome}!`);
-
-        showPage("eventos");
-    } else {
-        alert("E-mail ou senha incorretos.");
-    }
+forms.login.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!validar(forms.login)) return;
+  const btn = forms.login.querySelector('.auth-btn');
+  btn.textContent = 'Entrando...';
+  setTimeout(() => {
+    btn.classList.add('success');
+    btn.textContent = '✓ Bem-vindo!';
+    // localStorage.setItem('conecta_user', JSON.stringify({...}))
+    // setTimeout(()=> showPage('home'), 800);
+  }, 600);
 });
 
-
+forms.cadastro.addEventListener('submit', e => {
+  e.preventDefault();
+  const f = forms.cadastro;
+  if (!validar(f)) return;
+  if (f.senha.value !== f.senha2.value){
+    f.senha2.classList.add('invalid');
+    alert('As senhas não coincidem');
+    return;
+  }
+  const btn = f.querySelector('.auth-btn');
+  btn.textContent = 'Criando conta...';
+  setTimeout(() => {
+    btn.classList.add('success');
+    btn.textContent = '✓ Conta criada!';
+    setTimeout(() => switchTab('login'), 900);
+  }, 600);
+});
