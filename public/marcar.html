@@ -1,443 +1,413 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conecta</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Baumans&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-
-  <!--PAGINA HOME-->
-
-  <div id="app">
-
-    <div class="page active" id="page-home">
-      <header class="top-header">
-
-        <div class="logo">
-          <button class="logo01" data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
-        </div>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conecta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Baumans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
 
 
-        <!--NAVEGADOR -->
-        <nav class="top-nav">
-          <ul>
-            <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
-            <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
-            <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
-            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
-          </ul>
-        </nav>
-      </header>
-      <banner>
+
+        <div id="app">
+        
+            <div class="page active" id="page-home">
+                <header class="top-header">
+
+                    <div class="logo" >
+                    <button class="logo01"data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
+                        </div>
+
+                    <nav class="top-nav">
+                        <ul>              
+                            <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
+                            <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
+                            <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+                            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <banner>
 
         <div class="banner">
-          <button class="btn-primary" data-page="page-eventos">Veja nossos eventos</button>
+        <button class="btn-primary" data-page="page-eventos">Veja nossos eventos</button>
+
+
         </div>
-      </banner>
+    
+                </banner>
 
+                <main class="main-grid">
+                    <section class="hero-block">
+                        <h1>Bem-vindo ao Conecta!</h1>
+                        <h2>Conectando Comunidades</h2>
+                        <p>Te ajudamos a conhecer melhor seu bairro.</p>
+                        
+                        <a href="#sobrenos" class="btn-primary02">Conheça nosso Projeto</a>
+                    
+                    </section>
 
+                    <section class="cards-block">
+                        <title><h1>Principais Eventos</h1></title>
+                        <article class="card">
+                            <div class="card-num">Aula de Skate</div>
+                            <h3>Toda quarta e quinta às 17h</h3>
+                            <p>Com os conhecimentos do professor William comece um esporte que te ajuda com equilibio e mobilidade.</p>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-num">Yoga para Iniciantes</div>
+                            <h3>Toda segunda às 15h</h3>
+                            <p>"A yoga vai além da meditição, é uma filosofia que une o ser humano com sua mais pura essência" - Professor Oscar.</p>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-num">Aula de Capoeira</div>
+                            <h3>Toda quinta às 18h</h3>
+                            <p>"Mais que luta, é dança, música e história." - Professor Édio</p>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
+                        </article>
+                    </section>
 
+                    
+                    <section class="highlight-block">
+                        <div class="highlight-text">
+                            <h2>Sobre nosso projeto</h2>
+                            <p>Nosso processo criativo começa com o aumento do vicio em celular na vida de jovens e o sedentarismo.</p>
+                                  
+                            
+                           <p> <span id="textoExtra" class="texto-extra">
+                                                Observamos que o uso excessivo de dispositivos digitais tem impactado diretamente a saúde física e mental dos jovens. Nosso objetivo 
+                                                é incentivar hábitos mais saudáveis, promover a participação em atividades presenciais e fortalecer a interação social através de eventos, esportes e 
+                                                ações comunitárias. Acreditamos que pequenas mudanças de rotina podem gerar grandes transformações na qualidade de vida. </span>
+                                            </span>
+                                        </p>
+                                
+                                        <button class="btn-ver-mais" id="btnVerMais" onclick="toggleTexto()">
+                                            Ver mais
+                                        </button>
 
-      <main class="main-grid">
-        <section class="hero-block">
-          <h1>Bem-vindo ao Conecta!</h1>
-          <h2>Conectando Comunidades</h2>
-          <p>Te ajudamos a conhecer melhor seu bairro.</p>
+                        <div class="highlight-stat" >
+                            <div class="stat"><span class="num">Email</span><span class="label">conecta.projeto@gmail.com</span></div>
+                            <div class="stat"><span class="num">Contato</span><span class="label">(48) 99999-9999</span></div>
+                            <div class="stat"><span class="num">Apoio via</span><span class="label">(48) 00000-0000</span></div>
+                        </div>
+                    </section>
+                </main>
 
-          <a href="#sobrenos" class="btn-primary02">Conheça nosso projeto</a>
-
-        </section>
-
-        <section class="cards-block">
-          <title>
-            <h1>Principais Eventos</h1>
-          </title>
-          <article class="card">
-            <div class="card-num">Aula de Skate</div>
-            <h3>Toda quarta e quinta às 17h</h3>
-            <p>Com os conhecimentos do professor William comece um esporte que te ajuda com equilibio e mobilidade.</p>
-            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
-          </article>
-          <article class="card">
-            <div class="card-num">Yoga para Iniciantes</div>
-            <h3>Toda segunda às 15h</h3>
-            <p>"A yoga vai além da meditição, é uma filosofia que une o ser humano com sua mais pura essência" -
-              Professor Oscar.</p>
-            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
-          </article>
-          <article class="card">
-            <div class="card-num">Aula de Capoeira</div>
-            <h3>Toda quinta às 18h</h3>
-            <p>"Mais que luta, é dança, música e história." - Professor Édio</p>
-            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
-          </article>
-        </section>
-
-
-        <section class="highlight-block">
-          <div class="highlight-text">
-            <h2>Sobre nosso projeto</h2>
-            <p>Nosso processo criativo começa com o aumento do vicio em celular na vida de jovens e o sedentarismo.</p>
-
-
-            <p> <span id="textoExtra" class="texto-extra">
-                Observamos que o uso excessivo de dispositivos digitais tem impactado diretamente a saúde física e
-                mental dos jovens. Nosso objetivo
-                é incentivar hábitos mais saudáveis, promover a participação em atividades presenciais e fortalecer a
-                interação social através de eventos, esportes e
-                ações comunitárias. Acreditamos que pequenas mudanças de rotina podem gerar grandes transformações na
-                qualidade de vida. </span>
-              </span>
-            </p>
-
-            <button class="btn-ver-mais" id="btnVerMais" onclick="toggleTexto()">
-              Ver mais
-            </button>
-
-            <div class="highlight-stat">
-              <div class="stat"><span class="num">Email</span><span class="label">conecta.projeto@gmail.com</span></div>
-              <div class="stat"><span class="num">Contato</span><span class="label">(48) 99999-9999</span></div>
-              <div class="stat"><span class="num">Apoie a comunidade</span><span class="label">(48) 00000-0000</span></div>
+                <footer class="main-footer" id="sobrenos">
+                    <p>© 2026 Grupo Conexão · Todos os direitos reservados</p>
+                </footer>
             </div>
-        </section>
-      </main>
-
-      <footer class="main-footer" id="sobrenos">
-        <p> ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ© 2026 Grupo Conexão · Todos os direitos reservados</p>
-      </footer>
-    </div>
 
 
 
 
-    <!-- PÁGINA EVENTOS -->
-    <div class="page" id="page-eventos">
-      <header class="top-header">
-        <div class="logo">
-          <button class="logo01" data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
+            <!-- PÁGINA EVENTOS -->
+            <div class="page" id="page-eventos">
+                <header class="top-header">
+                <div class="logo" >
+                    <button class="logo01"data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
+                        </div>
+                    <nav class="top-nav">
+                        <ul>
+                            <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
+                            <li><a href="#eventos" class="nav-link active" data-page="page-eventos">Eventos</a></li>
+                            <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+                            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main class="inner-page">
+                    <h2 class="page-title">EVENTOS QUE ESTÃO ROLANDO PERTO DE VOCÊ!</h2>
+                    <p class="page-intro">para clientes de diversos segmentos.</p>
+                    <div class="project-grid">
+                        <div class="project-item"><div class="proj-thumb"></div><h4>Brycachó</h4><p>Brechó beneficiente hoje ás 13h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t2"></div><h4>Sebo público</h4><p>Sebo de vinis famosos e vintagens - 13/06 ás 14h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t3"></div><h4>Trocas de Figurinhas</h4><p>Troca e venda de figurinhas da copa de 26 - amanhã as 16h .</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                        <div class="project-item"><div class="proj-thumb t4"></div><h4>Mural de Pintura</h4><p>Mural de pintura para crianças e adolescentes - quinta as 9h.</p><button class="btn-primary02" data-page="page-login">Marcar Presença</button></div>
+                    </div>
+                </main>
+                <footer class="main-footer"><p>© 2026 Meridian Studio · Todos os direitos reservados</p></footer>
+            </div>
+
+
+
+
+
+
+
+            <!-- ====== PÁGINA LOGIN / CADASTRO ====== -->
+<div class="page" id="page-login">
+    <header class="top-header">
+      <div class="logo"><button class="logo01" onclick="showPage('marcar')"></button></div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#home" onclick="showPage('home')">Início</a></li>
+          <li><a href="#eventos" onclick="showPage('eventos')">Eventos</a></li>
+          <li><a href="#planos" onclick="showPage('planos')">Planos</a></li>
+          <li><a href="#login" class="active" onclick="showPage('login')">Entrar</a></li>
+          <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <section class="auth-page">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Entrar</button>
+          <button class="auth-tab" data-tab="cadastro">Cadastrar</button>
         </div>
-        <nav class="top-nav">
-          <ul>
-            <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
-            <li><a href="#eventos" class="nav-link active" data-page="page-eventos">Eventos</a></li>
-            <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
-            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="inner-page">
-        <h2 class="page-title">EVENTOS QUE ESTÃO ROLANDO PERTO DE VOCÊ!</h2>
-        <p class="page-intro">para clientes de diversos segmentos.</p>
-        <div class="project-grid">
-          <div class="project-item">
-            <div class="proj-thumb"></div>
-            <h4>Brycachó</h4>
-            <p>Brechó beneficiente hoje ás 13h.</p><button class="btn-primary02" data-page="page-login">Marcar
-              Presença</button>
+  
+        <!-- LOGIN -->
+        <form class="auth-form active" id="form-login" novalidate>
+          <h2>Bem-vindo de volta!</h2>
+          <p class="auth-sub">Acesse sua conta para marcar presença nos eventos.</p>
+  
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="xxxx@email.com" required>
+          </label>
+  
+          <label>
+            <span>Senha</span>
+            <input type="password" name="senha" placeholder="123456" required minlength="6">
+          </label>
+  
+          <div class="auth-row">
+            <label class="check"><input type="checkbox">Lembrar de mim</label>
+            <a href="#esqueci" class="auth-link">Esqueci a senha</a>
           </div>
-          <div class="project-item">
-            <div class="proj-thumb t2"></div>
-            <h4>Sebo público</h4>
-            <p>Sebo de vinis famosos e vintagens - 13/06 ás 14h.</p><button class="btn-primary02"
-              data-page="page-login">Marcar Presença</button>
-          </div>
-          <div class="project-item">
-            <div class="proj-thumb t3"></div>
-            <h4>Trocas de Figurinhas</h4>
-            <p>Troca e venda de figurinhas da copa de 26 - amanhã as 16h .</p><button class="btn-primary02"
-              data-page="page-login">Marcar Presença</button>
-          </div>
-          <div class="project-item">
-            <div class="proj-thumb t4"></div>
-            <h4>Mural de Pintura</h4>
-            <p>Mural de pintura para crianças e adolescentes - quinta as 9h.</p><button class="btn-primary02"
-              data-page="page-login">Marcar Presença</button>
-          </div>
-        </div>
-      </main>
-      <footer class="main-footer">
-        <p>© 2026 Meridian Studio · Todos os direitos reservados</p>
-      </footer>
-    </div>
-
-
-
-
-
-
-
-    <!-- ====== PÁGINA LOGIN / CADASTRO ====== -->
-    <div class="page" id="page-login">
-      <header class="top-header">
-        <div class="logo"><button class="logo01" onclick="showPage('page-home')"></button></div>
-        <nav class="top-nav">
-          <ul>
-            <li>ㅤ</a></li>
-            <li>ㅤ</a></li>
-            <li>ㅤ</a></li>
-            <li>ㅤ</a></li>
-            <li>ㅤ</li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="auth-page">
-        <div class="auth-card">
-          <div class="auth-tabs">
-            <button class="auth-tab active" data-tab="login">Entrar</button>
-            <button class="auth-tab" data-tab="cadastro">Cadastrar</button>
-          </div>
-
-          <!-- LOGIN -->
-          <form class="auth-form active" id="form-login" novalidate>
-            <h2>Bem-vindo de volta!</h2>
-            <p class="auth-sub">Acesse sua conta para marcar presença nos eventos.</p>
-
-            <label>
-              <span>E-mail</span>
-              <input type="email" name="email" placeholder="xxxx@email.com" required>
-            </label>
-
+  
+          <button type="submit" class="auth-btn">Entrar</button>
+  
+          <p class="auth-foot">
+            Não tem conta? <a href="#cadastro" class="auth-link" data-switch="cadastro">Cadastre-se</a>
+          </p>
+        </form>
+  
+        <!-- CADASTRO -->
+        <form class="auth-form" id="form-cadastro" novalidate>
+          <h2>Crie sua conta</h2>
+          <p class="auth-sub">Faça parte da comunidade Conecta.</p>
+  
+          <label>
+            <span>Nome completo</span>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+  
+          <label>
+            <span>E-mail</span>
+            <input type="email" name="email" placeholder="xxxxx@email.com" required>
+          </label>
+  
+          <div class="auth-grid-2">
             <label>
               <span>Senha</span>
               <input type="password" name="senha" placeholder="123456" required minlength="6">
             </label>
-
-            <div class="auth-row">
-              <label class="check"><input type="checkbox">Lembrar de mim</label>
-              <a href="#esqueci" class="auth-link">Esqueci a senha</a>
-            </div>
-
-            <button type="submit" class="auth-btn">Entrar</button>
-
-            <p class="auth-foot">
-              Não tem conta? <a href="#cadastro" class="auth-link" data-switch="cadastro">Cadastre-se</a>
-            </p>
-          </form>
-
-          <!-- CADASTRO -->
-
-          <form class="auth-form" id="form-cadastro" novalidate>
-            <h2>Crie sua conta</h2>
-            <p class="auth-sub">Faça parte da comunidade Conecta.</p>
-
             <label>
-              <span>Nome completo</span>
-              <input type="text" name="nome" placeholder="Seu nome" required>
+              <span>Confirmar</span>
+              <input type="password" name="senha2" placeholder="123456" required minlength="6">
             </label>
+          </div>
+  
+          <label class="check">
+            <input type="checkbox" required>
+            Aceito os termos de uso e política de privacidade
+          </label>
+  
+          <button type="submit" class="auth-btn">Criar conta</button>
+  
+          <p class="auth-foot">
+            Já tem conta? <a href="#login" class="auth-link" data-switch="login">Entrar</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  
+    <footer class="main-footer">© 2026 Grupo Conexão · Todos os direitos reservados</footer>
+</div>
 
-            <label>
-              <span>E-mail</span>
-              <input type="email" name="email" placeholder="xxxxx@email.com" required>
-            </label>
 
-            <div class="auth-grid-2">
-              <label>
-                <span>Senha</span>
-                <input type="password" name="senha" placeholder="123456" required minlength="6">
-              </label>
-              <label>
-                <span>Confirmar</span>
-                <input type="password" name="senha2" placeholder="123456" required minlength="6">
-              </label>
-            </div>
+<!-- Pagina Perfil-->
 
-            <label class="check">
-              <input type="checkbox" required>
-              Aceito os termos de uso e política de privacidade
-            </label>
 
-            <button type="submit" class="auth-btn">Criar conta</button>
+<div class="page" id="page-perfil">
+<header class="top-header">
 
-            <p class="auth-foot">
-              Já tem conta? <a href="#login" class="auth-link" data-switch="login">Entrar</a>
-            </p>
-          </form>
-        </div>
-      </section>
-
-      <footer class="main-footer">© 2026 Grupo Conexão · Todos os direitos reservados</footer>
+    <div class="logo">
+        <button class="logo01" data-page="page-home"></button>
     </div>
 
-
-    <!-- Pagina Perfil-->
-
-
-    <div class="page" id="page-perfil">
-      <header class="top-header">
-
-        <div class="logo">
-          <button class="logo01" data-page="page-home"></button>
-        </div>
-
-        <nav class="top-nav">
-          <ul>
+    <nav class="top-nav">
+        <ul>
             <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
             <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
             <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
             <li><a href="#perfil" class="nav-link active" data-page="perfil">Perfil</a></li>
-          </ul>
-        </nav>
+        </ul>
+    </nav>
 
-      </header>
+</header>
 
-      <main class="perfil-page">
+<main class="perfil-page">
 
-        <div class="perfil-card">
+    <div class="perfil-card">
 
-          <h1>Meu Perfil</h1>
+        <h1>Meu Perfil</h1>
 
-          <div class="perfil-info">
+        <div class="perfil-info">
 
             <p><strong>Nome:</strong> <span id="perfil-nome"></span></p>
 
             <p><strong>E-mail:</strong> <span id="perfil-email"></span></p>
 
-          </div>
-
-          <h2>Eventos Marcados</h2>
-
-          <ul id="lista-eventos"></ul>
-
         </div>
 
-      </main>
+        <h2>Eventos Marcados</h2>
+
+        <ul id="lista-eventos"></ul>
 
     </div>
 
+</main>
+
+</div>
 
 
 
 
 
 
-    <!-- PÁGINA PLANOS -->
-    <div class="page" id="page-planos">
-      <header class="top-header">
-        <div class="logo">
-          <button class="logo01" data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
-        </div>
-        <nav class="top-nav">
-          <ul>
-            <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
-            <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
-            <li><a href="#planos" class="nav-link active" data-page="page-planos">Planos</a></li>
-            <li><a href="#perfil" class="nav-link" data-page="page-perfil">Perfil</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <main class="planos-page">
+            <!-- PÁGINA PLANOS -->
+            <div class="page" id="page-planos">
+                <header class="top-header">
+                    <div class="logo" >
+                    <button class="logo01"data-page="page-home" image="Imagens/CONECTAM02.jpeg"></button>
+                        </div>
+                    <nav class="top-nav">
+                        <ul>
+                             <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
+                             <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
+                             <li><a href="#planos" class="nav-link active" data-page="page-planos">Planos</a></li>
+                             <li><a href="#perfil" class="nav-link" data-page="page-perfil">Perfil</a></li>
+                        </ul>
+                    </nav>
+    </header>
+
+    <main class="planos-page">
         <section class="planos-hero">
-          <h1>Faça parte da Comunidade do Conecta</h1>
-          <p>Escolha como você quer participar da nossa comunidade. Todos os planos apoiam projetos sociais no bairro.
-          </p>
+            <h1>Faça parte da Comunidade do Conecta</h1>
+            <p>Escolha como você quer participar da nossa comunidade. Todos os planos apoiam projetos sociais no bairro.</p>
         </section>
 
         <section class="planos-grid">
-          <article class="plano-card">
-            <header class="plano-head">
-              <h3>Participante</h3>
-              <p class="plano-sub">Para quem quer conhecer</p>
-            </header>
-            <div class="plano-price"><span class="moeda">R$</span><span class="valor">0</span><span
-                class="periodo">/mês</span></div>
-            <ul class="plano-list">
-              <li>Acesso a eventos abertos</li>
-              <li>Marcar presença em 2 eventos/mês</li>
-            </ul>
-            <a href="#pagamento" class="btn-primary plano-btn">Começar grátis</a>
-          </article>
+            <article class="plano-card">
+                <header class="plano-head">
+                    <h3>Participante</h3>
+                    <p class="plano-sub">Para quem quer conhecer</p>
+                </header>
+                <div class="plano-price"><span class="moeda">R$</span><span class="valor">0</span><span class="periodo">/mês</span></div>
+                <ul class="plano-list">
+                    <li>Acesso a eventos abertos</li>
+                    <li>Marcar presença em 2 eventos/mês</li>
+                </ul>
+                <a href="#carrinho" class="btn-primary plano-btn">Começar grátis</a>
+            </article>
 
-          <article class="plano-card plano-destaque">
-            <span class="plano-badge">Mais popular</span>
-            <header class="plano-head">
-              <h3>Apoiador</h3>
-              <p class="plano-sub">Para quem participa sempre</p>
-            </header>
-            <div class="plano-price"><span class="moeda">R$</span><span class="valor">39,90</span><span
-                class="periodo">/mês</span></div>
-            <ul class="plano-list">
-              <li>Tudo do plano Participante</li>
-              <li>Eventos ilimitados</li>
-              <li>Chat da Comunidade</li>
-            </ul>
-            <a href="#pagamento" class="btn-primary plano-btn">Quero apoiar</a>
-          </article>
+            <article class="plano-card plano-destaque">
+                <span class="plano-badge">Mais popular</span>
+                <header class="plano-head">
+                    <h3>Apoiador</h3>
+                    <p class="plano-sub">Para quem participa sempre</p>
+                </header>
+                <div class="plano-price"><span class="moeda">R$</span><span class="valor">39,90</span><span class="periodo">/mês</span></div>
+                <ul class="plano-list">
+                    <li>Tudo do plano Participante</li>
+                    <li>Eventos ilimitados</li>
+                    <li>Chat da Comunidade</li>
+                </ul>
+                <a href="#carrinho" class="btn-primary plano-btn">Quero apoiar</a>
+            </article>
 
-          <article class="plano-card">
-            <header class="plano-head">
-              <h3>Comunidade</h3>
-              <p class="plano-sub">Para empresas e coletivos</p>
-            </header>
-            <div class="plano-price"><span class="moeda">R$</span><span class="valor">109,90</span><span
-                class="periodo">/mês</span></div>
-            <ul class="plano-list">
-              <li>Tudo do plano Apoiador</li>
-              <li>Logo nos eventos</li>
-              <li>Destaque e divulgação</li>
-              <li>Patrocinio</li>
-            </ul>
-            <a href="#pagamento" class="btn-primary plano-btn">Continuar com Comunidade</a>
-          </article>
+            <article class="plano-card">
+                <header class="plano-head">
+                    <h3>Comunidade</h3>
+                    <p class="plano-sub">Para empresas e coletivos</p>
+                </header>
+                <div class="plano-price"><span class="moeda">R$</span><span class="valor">109,90</span><span class="periodo">/mês</span></div>
+                <ul class="plano-list">
+                    <li>Tudo do plano Apoiador</li>
+                    <li>Logo nos eventos</li>
+                    <li>Destaque e divulgação</li>
+                    <li>Patrocinio</li>
+                </ul>
+                <a href="#carrinho" class="btn-primary plano-btn">Continuar com Comunidade</a>
+            </article>
         </section>
-      </main>
+    </main>
 
-      <footer class="main-footer">
-        <p>© 2026 Grupo Conexão · Todos os direitos reservados</p>
-      </footer>
-    </div>
+    <footer class="main-footer"><p>© 2026 Grupo Conexão · Todos os direitos reservados</p></footer>
+</div>
 
-    <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
-      <div class="checkout-card">
-        <button class="checkout-close" id="checkoutClose" aria-label="Fechar">×</button>
-        <h3>Finalizar assinatura</h3>
-        <p class="checkout-sub">Preencha seus dados para concluir.</p>
-
-        <form id="checkoutForm" class="checkout-form">
-          <label>Nome completo
-            <input type="text" name="nome" required />
+<div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-card">
+      <button class="checkout-close" id="checkoutClose" aria-label="Fechar">×</button>
+      <h3>Finalizar assinatura</h3>
+      <p class="checkout-sub">Preencha seus dados para concluir.</p>
+  
+      <form id="checkoutForm" class="checkout-form">
+        <label>Nome completo
+          <input type="text" name="nome" required />
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>Cartão
+          <input type="text" name="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required />
+        </label>
+        <div class="row-2">
+          <label>Validade
+            <input type="text" name="validade" placeholder="MM/AA" maxlength="5" required />
           </label>
-          <label>E-mail
-            <input type="email" name="email" required />
+          <label>CVV
+            <input type="text" name="cvv" placeholder="123" maxlength="4" required />
           </label>
-          <label>Cartão
-            <input type="text" name="cartao" placeholder="0000 0000 0000 0000" maxlength="19" required />
-          </label>
-          <div class="row-2">
-            <label>Validade
-              <input type="text" name="validade" placeholder="MM/AA" maxlength="5" required />
-            </label>
-            <label>CVV
-              <input type="text" name="cvv" placeholder="123" maxlength="4" required />
-            </label>
-          </div>
-          <button type="submit" class="checkout-pay">Pagar <span id="payTotal"></span></button>
-        </form>
-
-        <div class="checkout-success" id="checkoutSuccess" hidden>
-          <div class="check-icon">✓</div>
-          <h4>Pagamento aprovado!</h4>
-          <p>Bem-vindo(a) à Conexão Hackathon.</p>
         </div>
+        <button type="submit" class="checkout-pay">Pagar <span id="payTotal"></span></button>
+      </form>
+  
+      <div class="checkout-success" id="checkoutSuccess" hidden>
+        <div class="check-icon">✓</div>
+        <h4>Pagamento aprovado!</h4>
+        <p>Bem-vindo(a) à Conexão Hackathon.</p>
       </div>
     </div>
+  </div>
+
+  
+
+  <button class="plano-btn" data-plano="Participante" data-preco="0">Começar grátis</button>
+<button class="plano-btn" data-plano="Apoiador" data-preco="29">Assinar Apoiador</button>
+<button class="plano-btn" data-plano="Comunidade" data-preco="99">Assinar Comunidade</button>
+
+
+<button class="cart-fab" id="cartFab">
+    🛒 Carrinho <span class="badge" id="cartBadge">0</span>
+  </button>
+
+  
 
 
 
-
-
-    <script src="./script.js"></script>
-</body>
-
-</html>
+        <script src="./script.js"></script>
+    </body>
+    </html>
