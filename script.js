@@ -15,54 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-(function () {
-    const cart = [];
-    const overlay = document.getElementById('cartOverlay');
-    const drawer = document.getElementById('cartDrawer');
-    const body = document.getElementById('cartBody');
-    const totalEl = document.getElementById('cartTotal');
-    const badge = document.getElementById('cartBadge');
-    const checkoutBtn = document.getElementById('cartCheckout');
-    const modal = document.getElementById('checkoutModal');
-    const form = document.getElementById('checkoutForm');
-    const success = document.getElementById('checkoutSuccess');
-    const payTotal = document.getElementById('payTotal');
-  
-    const fmt = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
-  
-    function openCart() {
-      drawer.classList.add('active');
-      overlay.classList.add('active');
-    }
-    function closeCart() {
-      drawer.classList.remove('active');
-      overlay.classList.remove('active');
-    }
-  
-    function render() {
-      if (cart.length === 0) {
-        body.innerHTML = '<p class="cart-empty">Seu carrinho está vazio.</p>';
-        checkoutBtn.disabled = true;
-      } else {
-        body.innerHTML = cart.map((item, i) => `
-          <div class="cart-item">
-            <div class="cart-item-info">
-              <strong>Plano ${item.plano}</strong>
-              <small>Assinatura mensal</small>
-            </div>
-            <div style="display:flex; align-items:center;">
-              <span class="cart-item-price">${fmt(item.preco)}</span>
-              <button class="cart-item-remove" data-i="${i}" aria-label="Remover">×</button>
-            </div>
-          </div>
-        `).join('');
-        checkoutBtn.disabled = false;
-      }
-      const total = cart.reduce((s, x) => s + x.preco, 0);
-      totalEl.textContent = fmt(total);
-      badge.textContent = cart.length;
-      payTotal.textContent = cart.length ? ' — ' + fmt(total) : '';
-    }
   
     // Clique nos botões de plano
     document.querySelectorAll('.plano-btn').forEach(btn => {
