@@ -29,6 +29,7 @@
                             <li><a href="#home" class="nav-link active" data-page="page-home">Início</a></li>
                             <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
                             <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+                            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -58,19 +59,19 @@
                             <div class="card-num">Aula de Skate</div>
                             <h3>Toda quarta e quinta às 17h</h3>
                             <p>Com os conhecimentos do professor William comece um esporte que te ajuda com equilibio e mobilidade.</p>
-                            <button class="btn-primary" data-page="page-marcar">Marcar Presença</a>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
                         </article>
                         <article class="card">
                             <div class="card-num">Yoga para Iniciantes</div>
                             <h3>Toda segunda às 15h</h3>
                             <p>"A yoga vai além da meditição, é uma filosofia que une o ser humano com sua mais pura essência" - Professor Oscar.</p>
-                            <button class="btn-primary" data-page="page-marcar">Marcar Presença</a>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
                         </article>
                         <article class="card">
                             <div class="card-num">Aula de Capoeira</div>
                             <h3>Toda quinta às 18h</h3>
                             <p>"Mais que luta, é dança, música e história." - Professor Édio</p>
-                            <button class="btn-primary" data-page="page-marcar">Marcar Presença</a>
+                            <button class="btn-primary" data-page="page-login">Marcar Presença</a>
                         </article>
                     </section>
 
@@ -107,6 +108,7 @@
                             <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
                             <li><a href="#eventos" class="nav-link active" data-page="page-eventos">Eventos</a></li>
                             <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+                            <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -124,6 +126,11 @@
             </div>
 
 
+
+
+
+
+
             <!-- ====== PÁGINA LOGIN / CADASTRO ====== -->
 <div class="page" id="page-login">
     <header class="top-header">
@@ -134,6 +141,7 @@
           <li><a href="#eventos" onclick="showPage('eventos')">Eventos</a></li>
           <li><a href="#planos" onclick="showPage('planos')">Planos</a></li>
           <li><a href="#login" class="active" onclick="showPage('login')">Entrar</a></li>
+          <li><a href="perfil" data-page="page-perfil">Perfil</a></li>
         </ul>
       </nav>
     </header>
@@ -152,23 +160,23 @@
   
           <label>
             <span>E-mail</span>
-            <input type="email" name="email" placeholder="voce@email.com" required>
+            <input type="email" name="email" placeholder="xxxx@email.com" required>
           </label>
   
           <label>
             <span>Senha</span>
-            <input type="password" name="senha" placeholder="••••••••" required minlength="6">
+            <input type="password" name="senha" placeholder="123456" required minlength="6">
           </label>
   
           <div class="auth-row">
-            <label class="check"><input type="checkbox"> Lembrar de mim</label>
-            <a href="#" class="auth-link">Esqueci a senha</a>
+            <label class="check"><input type="checkbox">Lembrar de mim</label>
+            <a href="#esqueci" class="auth-link">Esqueci a senha</a>
           </div>
   
           <button type="submit" class="auth-btn">Entrar</button>
   
           <p class="auth-foot">
-            Não tem conta? <a href="#" class="auth-link" data-switch="cadastro">Cadastre-se</a>
+            Não tem conta? <a href="#cadastro" class="auth-link" data-switch="cadastro">Cadastre-se</a>
           </p>
         </form>
   
@@ -184,17 +192,17 @@
   
           <label>
             <span>E-mail</span>
-            <input type="email" name="email" placeholder="voce@email.com" required>
+            <input type="email" name="email" placeholder="xxxxx@email.com" required>
           </label>
   
           <div class="auth-grid-2">
             <label>
               <span>Senha</span>
-              <input type="password" name="senha" placeholder="••••••••" required minlength="6">
+              <input type="password" name="senha" placeholder="123456" required minlength="6">
             </label>
             <label>
               <span>Confirmar</span>
-              <input type="password" name="senha2" placeholder="••••••••" required minlength="6">
+              <input type="password" name="senha2" placeholder="123456" required minlength="6">
             </label>
           </div>
   
@@ -206,7 +214,7 @@
           <button type="submit" class="auth-btn">Criar conta</button>
   
           <p class="auth-foot">
-            Já tem conta? <a href="#" class="auth-link" data-switch="login">Entrar</a>
+            Já tem conta? <a href="#login" class="auth-link" data-switch="login">Entrar</a>
           </p>
         </form>
       </div>
@@ -214,6 +222,56 @@
   
     <footer class="main-footer">© 2026 Grupo Conexão · Todos os direitos reservados</footer>
 </div>
+
+
+<!-- Pagina Perfil-->
+
+
+<div class="page" id="page-perfil">
+
+```
+<header class="top-header">
+
+    <div class="logo">
+        <button class="logo01" data-page="page-home"></button>
+    </div>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
+            <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
+            <li><a href="#planos" class="nav-link" data-page="page-planos">Planos</a></li>
+            <li><a href="#perfil" class="nav-link active" data-page="perfil">Perfil</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="perfil-page">
+
+    <div class="perfil-card">
+
+        <h1>Meu Perfil</h1>
+
+        <div class="perfil-info">
+
+            <p><strong>Nome:</strong> <span id="perfil-nome"></span></p>
+
+            <p><strong>E-mail:</strong> <span id="perfil-email"></span></p>
+
+        </div>
+
+        <h2>Eventos Marcados</h2>
+
+        <ul id="lista-eventos"></ul>
+
+    </div>
+
+</main>
+
+</div>
+
+
 
 
 
@@ -225,9 +283,10 @@
                         </div>
                     <nav class="top-nav">
                         <ul>
-                            <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
-                            <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
-                            <li><a href="#planos" class="nav-link active" data-page="page-planos">Planos</a></li>
+                             <li><a href="#home" class="nav-link" data-page="page-home">Início</a></li>
+                             <li><a href="#eventos" class="nav-link" data-page="page-eventos">Eventos</a></li>
+                             <li><a href="#planos" class="nav-link active" data-page="page-planos">Planos</a></li>
+                             <li><a href="#perfil" class="nav-link " data-page="perfil">Perfil</a></li>
                         </ul>
                     </nav>
     </header>
