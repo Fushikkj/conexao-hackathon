@@ -39,6 +39,23 @@
     border:none;
     cursor:pointer;
 }
+.perfil{
+
+    width: 100%;
+}
+
+.perfil img {
+
+    max-width: 100%;
+    background-repeat:no-repeat;
+    position:relative;
+    left: 650px;
+    width:50px;
+    background-size: 600px;
+    height:50px;
+    border:none;
+    cursor: pointer;
+}
 body {
 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -172,11 +189,12 @@ body {
 
 .top-nav a {
 
+    position: fixed;
     font-family: "Baumans", system-ui;
     display: flex;
     align-items:center;
     position:relative;
-    left:600px;
+    left:40px;
     height: 100%;
     width: 100%;
     color: #ffffff;
