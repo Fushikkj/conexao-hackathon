@@ -68,7 +68,7 @@ body {
 .btn-primary {
 
     position: absolute;
-    top: 55%;  
+    top: 70%;  
     align-self:center;
     background: var(--accent);
     color: #fff;
