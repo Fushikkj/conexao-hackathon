@@ -39,6 +39,7 @@
     border:none;
     cursor:pointer;
 }
+<<<<<<< Updated upstream
 .perfil{
 
     width: 100%;
@@ -56,6 +57,10 @@
     border:none;
     cursor: pointer;
 }
+=======
+
+
+>>>>>>> Stashed changes
 body {
 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -336,7 +341,7 @@ body {
     font-family:"Baumans", system-ui;
     flex: 1; 
     position:relative;
-    top: 90px;
+    top: 10px;
 }
 
 .highlight-text h2 {
