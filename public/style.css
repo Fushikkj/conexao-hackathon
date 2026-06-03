@@ -171,11 +171,10 @@ body {
 
 /* ===== HEADER TOPO HORIZONTAL ===== */
 .top-header {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 3rem;
+    padding: 1rem 2rem;
     background: var(--ink);
     position: sticky;
     top: 0;
@@ -183,38 +182,31 @@ body {
 }
 
 .top-nav ul {
-    
     display: flex;
     gap: 2rem;
     list-style: none;
+    align-items: center;
 }
 
 .top-nav a {
-
-    position: fixed;
     font-family: "Baumans", system-ui;
-    display: flex;
-    align-items:center;
-    position:relative;
-    left:40px;
-    height: 100%;
-    width: 100%;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    transition: color 0.2s;
+    transition: color 0.2s ease;
+    padding: 8px 0;
 }
 
-.top-nav a:hover, .top-nav a.active {
+.top-nav a:hover,
+.top-nav a.active {
     color: var(--bg);
 }
 
 .top-nav a.active {
     border-bottom: 2px solid var(--accent);
-    padding-bottom: 2px;
 }
 
 /* ===== MAIN GRID ===== */
